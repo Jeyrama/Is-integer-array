@@ -17,3 +17,13 @@ function isIntArray(arr) {
 }
 
 // or
+
+Number.isInteger = Number.isInteger || function(value) {
+  return typeof value === "number" && 
+         isFinite(value) && 
+         Math.floor(value) === value;
+};
+
+function isIntArray(arr) {
+  return Array.isArray(arr) && arr.every(Number.isInteger)
+}
