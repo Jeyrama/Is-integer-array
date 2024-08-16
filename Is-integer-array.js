@@ -8,3 +8,6 @@ Write a function with the signature shown below:
   returns true  / True if array is empty.
   returns false / False for every other input.
 */
+
+
+// Solution
