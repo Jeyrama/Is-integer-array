@@ -15,3 +15,5 @@ Write a function with the signature shown below:
 function isIntArray(arr) {
   return Array.isArray(arr) && arr.every(function (x) { return Math.floor(x) === x });
 }
+
+// or
