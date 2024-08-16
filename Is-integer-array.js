@@ -11,3 +11,7 @@ Write a function with the signature shown below:
 
 
 // Solution
+
+function isIntArray(arr) {
+  return Array.isArray(arr) && arr.every(function (x) { return Math.floor(x) === x });
+}
